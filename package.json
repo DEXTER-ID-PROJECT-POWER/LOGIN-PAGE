@@ -1,33 +1,43 @@
 {
   "name": "gmail-login-system",
-  "version": "1.0.0",
-  "description": "Gmail Login System with GitHub Approved Emails",
+  "version": "1.1.0",
+  "description": "Enhanced Gmail Login System with Security Features",
   "main": "dexter.js",
   "scripts": {
     "start": "node dexter.js",
     "dev": "nodemon dexter.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage",
+    "lint": "eslint .",
+    "security-check": "npm audit"
   },
   "keywords": [
     "nodejs",
     "express",
     "gmail",
     "oauth",
-    "authentication"
+    "authentication",
+    "security"
   ],
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
     "axios": "^1.6.2",
+    "cookie-parser": "^1.4.6",
+    "csurf": "^1.11.0",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "express-rate-limit": "^6.8.1",
     "express-session": "^1.17.3",
-    "google-auth-library": "^9.6.3"
+    "google-auth-library": "^9.6.3",
+    "helmet": "^7.1.0"
   },
   "devDependencies": {
-    "nodemon": "^3.0.2"
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.4"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=16.0.0"
   }
 }
