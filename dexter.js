@@ -11,9 +11,9 @@ const port = process.env.PORT || 3000;
 // Google OAuth සකසන්න
 const CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
 const CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET;
-const REDIRECT_URL = process.env.REDIRECT_URL || 'http://localhost:3000/auth/google/callback';
-const APPROVED_REDIRECT = process.env.APPROVED_REDIRECT || 'http://localhost:3000/dashboard';
-const REJECTED_REDIRECT = process.env.REJECTED_REDIRECT || 'http://localhost:3000/not-approved';
+const REDIRECT_URL = process.env.REDIRECT_URL || 'https://login-page-owner-dexter.onrender.com/auth/google/callback';
+const APPROVED_REDIRECT = process.env.APPROVED_REDIRECT || 'https://login-page-owner-dexter.onrender.com/dashboard';
+const REJECTED_REDIRECT = process.env.REJECTED_REDIRECT || 'https://login-page-owner-dexter.onrender.com/not-approved';
 
 const client = new OAuth2Client(CLIENT_ID, CLIENT_SECRET, REDIRECT_URL);
 
