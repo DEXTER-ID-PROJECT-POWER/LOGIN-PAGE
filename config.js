@@ -5,7 +5,7 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "THARUWA-MD~O6RkHCzD#o-tt6LJN-ayI2ZG2uMrsGG7ntUcq5VF81WIdvj9W2l0",
+SESSION_ID: process.env.SESSION_ID || "THARUWA-MD~b2w1kDYR#bu8JcmtqUoUKcT9JyWjPw1ic4lBHzsbus_RvKomTjYY",
 // add your Session Id 
 AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true",
 // make true or false status auto seen
@@ -51,11 +51,11 @@ DELETE_LINK: process.env.DELETE_LINK || "true",
 // make anti link true,false for groups 
 ANTI_LINK_KICK: process.env.ANTI_LINK_KICK || "true",
 // make anti link true,false for groups 
-AUTO_VOICE: process.env.AUTO_VOICE || "false",
+AUTO_VOICE: process.env.AUTO_VOICE || "true",
 // make true for send automatic voices
 AUTO_STICKER: process.env.AUTO_STICKER || "false",
 // make true for automatic stickers 
-AUTO_REPLY: process.env.AUTO_REPLY || "false",
+AUTO_REPLY: process.env.AUTO_REPLY || "true",
 // make true or false automatic text reply 
 ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || "false",
 // maks true for always online 
